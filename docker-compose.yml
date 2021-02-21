@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 version: "3.8"
-
 services:
   app:
     image: platziapp
@@ -13,19 +11,3 @@ services:
 
   db:
     image: mongo
-=======
-version: "3.8"
-
-services:
-  app:
-    image: platziapp
-    environment:
-      MONGO_URL: "mongodb://db:27017/test"
-    depends_on:
-      - db
-    ports:
-      - "5000:3000"
-
-  db:
-    image: mongo
->>>>>>> 556563b31d9ead0e9e33c627e963caa32f0f9508
