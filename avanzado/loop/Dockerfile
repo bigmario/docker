@@ -1,3 +1,6 @@
 FROM ubuntu:trusty
 COPY ["loop.sh", "/"]
-CMD /loop.sh
+# Shell Form
+#CMD /loop.sh
+# Exec Form
+CMD ["/loop.sh"]
